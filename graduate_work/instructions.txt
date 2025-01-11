@@ -1,0 +1,6 @@
+что бы запустить проект (необходимо создать дб):
+python manage.py loaddata db.json
+python manage.py makemigrations
+python manage.py migrate
+чтобы запустить сервер:
+python manage.py runserver

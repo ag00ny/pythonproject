@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    {% include 'components/common/_styles.html' %}
+
+
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    {% include 'components/common/_header.html' %}
+    <!-- Close Header -->
+
+
+    <div class="container-fluid py-lg-1" >
+        <div class="page-content row pt-3" style="width: 100%">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+
+
+
+    <!-- Start Footer -->
+    {% include 'components/common/_footer.html' %}
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    {% include 'components/common/_scripts.html' %}
+    <!-- End Script -->
+</body>
+
+</html>
